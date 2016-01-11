@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/today_weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewbackcolor">
+
+    <include layout="@layout/today_weather_toolbar"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_marginTop="18dp"
+                android:padding="20dp"
+                android:background="@color/listviewcolor"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/condition"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/temperature"
+                    android:text="No Data"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/location"
+
+                    android:layout_marginTop="5dp"
+                    android:text="No Data"
+                    android:textSize="13dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                    android:id="@+id/date"
+
+                    android:text="No Data"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@color/listviewcolor"
+                android:padding="17dp"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/hightemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todayHiTemp"
+                        android:text="No Data"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/lowtemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todayLoTemp"
+                        android:text="No Data"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="13dp"
+                android:background="@color/listviewcolor"
+                android:padding="17dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todayHumidity"
+                        android:text="No Data"
+                        android:layout_gravity="center"
+
+                        android:textSize="20dp"
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/visibility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todayVisibility"
+                        android:text="No Data"
+                        android:layout_gravity="center"
+
+                        android:textSize="20dp"
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="13dp"
+                android:background="@color/listviewcolor"
+                android:padding="17dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/airpressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todayAirPressure"
+                        android:text="No Data"
+                        android:layout_gravity="center"
+
+                        android:textSize="20dp"
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/windchill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todayWind"
+                        android:text="No Data"
+
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="13dp"
+                android:background="@color/listviewcolor"
+                android:padding="17dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/sunrise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todaySunrise"
+                        android:text="No Data"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:paddingLeft="15dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/sunset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <weatherapp.msi.com.weatherapp.CustomFonts.NumberFont
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/todaySunset"
+                        android:text="No Data"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:paddingLeft="15dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:paddingRight="20dp"
+                android:drawableRight="@drawable/rightarrow"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/forecastBtn"
+                android:background="@drawable/forecast_button"
+                android:textSize="15dp"
+                android:typeface="serif"
+                android:layout_marginTop="13dp"
+                android:textAllCaps="false"
+                android:text="See Weather Forecast"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

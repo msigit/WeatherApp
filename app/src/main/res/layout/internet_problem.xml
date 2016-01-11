@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reload"
+    android:background="@color/viewbackcolor"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/listviewcolor"
+        android:padding="17dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/wireless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Connect to internet"
+            android:textSize="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/switchText"
+            android:text="Tap to update weather data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewbackcolor">
+
+    <include layout="@layout/forecast_weather_toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:padding="17dp"
+        android:background="@color/listviewcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+            android:text="Show Air pressure in"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+        <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+            android:id="@+id/pressure_txt"
+            android:text="Inches"
+            android:textColor="@color/switchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <Switch
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:layout_gravity="center"
+        android:id="@+id/pressure_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn=" Mm "
+        android:textOff=" In " />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:padding="17dp"
+        android:background="@color/listviewcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                android:text="Show Tempareture in"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                android:id="@+id/temp_txt"
+                android:text="Celsius"
+                android:layout_width="wrap_content"
+                android:textColor="@color/switchText"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Switch
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            android:layout_gravity="center"
+            android:id="@+id/temp_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn=" ℉ "
+            android:textOff=" ℃ " />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:padding="17dp"
+        android:background="@color/listviewcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                android:text="Show Wind Speed in"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                android:id="@+id/wind_txt"
+                android:text="Kilometers per hour"
+                android:layout_width="wrap_content"
+                android:textColor="@color/switchText"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Switch
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            android:layout_gravity="center"
+            android:id="@+id/wind_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn=" Mph "
+            android:textOff=" Km/h " />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:padding="17dp"
+        android:background="@color/listviewcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                android:text="Show Distance in"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <weatherapp.msi.com.weatherapp.CustomFonts.TextFont
+                android:id="@+id/distance_txt"
+                android:text="Kilometers"
+                android:layout_width="wrap_content"
+                android:textColor="@color/switchText"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Switch
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            android:layout_gravity="center"
+            android:id="@+id/distance_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn=" Mi "
+            android:textOff=" Km " />
+
+    </LinearLayout>
+
+</LinearLayout>
+
